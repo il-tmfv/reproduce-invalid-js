@@ -1,4 +1,4 @@
-Steps to reproduce:
+#### Steps to reproduce:
 - just run `clj -m cljs.main --optimizations advanced -c reproduce-invalid-js.core`
 
 Compilation will fail with
@@ -14,7 +14,7 @@ return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(reproduce_invalid_js.c
 // end of file
 ```
 
-How to fix:
+#### How to fix:
 - wrap `init-data` into `(some? init-data)` before passing to `when`:
 ```clojure
 (defn render-app []

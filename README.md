@@ -21,4 +21,9 @@ How to fix:
   (when (some? init-data)
     (swap! state merge init-data)))
 ```
+- add type hint:
+```clojure
+(def ^PersistentHashMap init-data
+  (merge {:a nil :b nil} {})
+```
 - change `org.clojure/clojurescript` version to `1.10.439`

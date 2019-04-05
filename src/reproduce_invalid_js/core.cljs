@@ -1,7 +1,5 @@
 (ns reproduce-invalid-js.core)
 
-(enable-console-print!)
-
 (def state (atom {}))
 
 (def init-data
